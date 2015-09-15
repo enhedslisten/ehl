@@ -1,0 +1,92 @@
+.jumbotron img {
+    width: 100%;
+    height: auto;
+
+}
+
+.jumbotron-content {
+    position: absolute;
+    top: 2rem;
+    height: 75vw;
+    width: 95vw;
+    max-width: 100%;
+    color: #fff;
+    text-shadow: rgba(black, 0.6) 0px 0px 5px;
+    &:before {
+        content: '';
+        display: inline-block;
+        height: 100%; 
+        vertical-align: middle;
+        margin-right: -0.25em;
+    }
+    @include media($tab){
+        top: 4rem;
+        font-size: 120%;
+        height: 25vw;
+    }
+    @include media($desk){
+        height: 33vw;
+        width: auto;
+    }
+
+
+    h2 {
+
+        @include media($tab){
+            font-size: 3.5vw;
+        }
+        margin-top: 0;
+        margin-bottom: 2rem;
+    }
+    p {
+        margin-bottom: 1.4rem;
+        max-width: 700px;
+    }
+    blockquote:before {
+        color: rgba(255, 255, 255, 0.5);
+
+    }
+}
+
+.jumbotron-content-inner {
+    display: inline-block;
+    vertical-align: middle;
+    width: 90vw;
+    max-width: 1100px;
+    a {
+        color: inherit;
+    }
+
+}
+
+.btn-jumbotron {
+    font-size: 80%;
+    @include media($tab){
+        font-size: 100%;
+    }
+    display: block;
+    background-color: rgba(200, 200, 200, 0.5);
+    padding: .5em 0;
+    color: #000;
+    height: 3em;
+    line-height: 2.2em;
+    text-decoration: none;
+    max-width: 300px;
+    font-family:"Soho W02 Bold";
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: rgba(black, 0.6) 0px 0px 5px;
+    text-shadow: rgba(black, 0.6) 0px 0px 0px;
+    &:hover {
+        background-color: rgba(255, 255, 255, 0.85);
+        box-shadow: rgba(black, 0) 0px 0px 0px;
+        color: #222;
+    }
+
+}
+
+.node-74731 .jumbotron-content-inner {
+    @include media($tab){
+        padding-left: 25vw;
+    }
+}

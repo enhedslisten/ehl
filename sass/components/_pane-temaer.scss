@@ -1,0 +1,19 @@
+.pane-temaer-panel-pane-1 {
+    margin-bottom: 1em;
+    h3 {
+        margin-bottom: 1em;
+        margin-top: 0.5;
+    }
+    img {
+        opacity: .6;
+        display: block;
+        width: 100%;
+        height: auto;
+        transition: all 0.3s ease;
+        filter: grayscale(80%);
+        &:hover {
+            opacity: 1;
+            filter: grayscale(0%);
+        }
+    }
+}

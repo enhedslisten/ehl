@@ -1,0 +1,42 @@
+name = ehl
+description = Please provide a description for your theme.
+base theme = omega
+screenshot = screenshot.png
+engine = phptemplate
+core = 7.x
+
+; ========================================
+; Breakpoints
+; ========================================
+
+breakpoints[desk] = (min-width: 903px)
+breakpoints[tab] = (min-width: 400px)
+breakpoints[mobile] = (min-width: 0px)
+
+; ========================================
+; Stylesheets
+; ========================================
+stylesheets[all][] = css/main.css
+
+; ========================================
+; Scripts
+; ========================================
+scripts[] = js/ehl.behaviors.js
+scripts[] = js/jquery.easyModal.js
+scripts[] = js/pushy.min.js
+scripts[] = js/main.js
+
+; ========================================
+; Regions
+; ========================================
+regions[header] = Header
+regions[navigation] = Navigation
+regions[help] = Help
+regions[content] = Content
+regions[contact] = Contact
+regions[footer] = Footer
+
+; ========================================
+; Plugins
+; ========================================
+plugins[panels][layouts] = layouts/panels

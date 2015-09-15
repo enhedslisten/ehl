@@ -1,0 +1,23 @@
+.easy-modal,
+.easy-modal-animated {
+    min-width: 310px;
+    width: 95%;
+    max-width: 800px;
+    padding: 1em;
+    @include media($tab){
+        padding: 4em 2em;
+    }
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.35);
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    overflow-y: scroll;
+    .btn-close {
+        margin-top: -.5em;
+        margin-right: -.5em;
+        @include media($tab){
+            margin-top: -2em;
+            margin-right: 0;
+        }
+    } 
+}

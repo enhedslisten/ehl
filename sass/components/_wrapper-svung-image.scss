@@ -1,0 +1,11 @@
+.wrapper-svung-image {
+    .content-svung-image_ {
+        @include media($tab){ 
+            position: absolute;
+            top: 6rem;
+            left: 550px;
+            color: #fff;
+            text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        }
+    }
+}

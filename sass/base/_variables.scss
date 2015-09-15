@@ -1,0 +1,66 @@
+// Typography
+$base-font-family: "Soho W02 ExtraLight", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+$heading-font-family: $base-font-family;
+
+// Font Sizes
+$base-font-size: 1.1em;
+
+// Line height
+$base-line-height: 1.6;
+$heading-line-height: 1.2;
+
+// Other Sizes
+$base-border-radius: 3px;
+$base-spacing: $base-line-height * 1em;
+$small-spacing: $base-spacing / 2;
+$base-z-index: 0;
+
+// Colors
+$dark-gray: #333;
+$medium-gray: #999;
+$light-gray: #ddd;
+// Cool
+$blue:  #1b99d6;
+$green: #a6bd38;
+// Warm
+$orange:  #f7931d;
+$red:     #C21B3E;
+$purple:  #80298f;
+
+// Color variables
+$primary-color: #C21B3E;
+$primary-color-light: #c4163f;
+$secondary-color: #F7F3E8; 
+$tertiary-color: #DDDDDD;
+
+$facebook-color: #3B5998;
+$twitter-color: #1daced;
+$youtube-color: #cc181e;
+$instagram-color: #125688;
+
+$bad-color: $red; // Bad color for errors, validation etc.
+$good-color: $green; // Good color for success etc.
+$info-color: $blue; // Good color for success etc.
+$warning-color: $orange; // Good color for success etc.
+$subtle-color: $medium-gray; // Subtle color for subtle text
+
+
+// Font Colors
+$base-background-color: #fff;
+$base-font-color: $dark-gray;
+$action-color: $primary-color;
+
+// Border
+$base-border-color: $light-gray;
+$base-border: 1px solid $base-border-color;
+
+// Forms
+$form-box-shadow: inset 0 1px 3px rgba(#000, 0.06);
+$form-box-shadow-focus: $form-box-shadow, 0 0 5px adjust-color($action-color, $lightness: -5%, $alpha: -0.3);
+
+$grids: 12;
+$gutters: 1/3;
+
+$tab: 44em;
+$desk: 70em;
+$between: 10em 20em;

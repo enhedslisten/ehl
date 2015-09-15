@@ -1,0 +1,50 @@
+#edit-line-item-fields-field-betaling-dobbeltmedlem-und-1[type="radio"]+label:after{
+  opacity: 0;
+  content: '';
+  font-size: 80%;
+  @include transition(opacity .5s ease-in-out); 
+}
+
+#edit-line-item-fields-field-betaling-dobbeltmedlem-und-1[type="radio"]:checked+label {
+  /* things won't work in IE 10 without this declaration */
+}
+
+#edit-line-item-fields-field-betaling-dobbeltmedlem-und-1[type="radio"]:checked+label:after{
+  opacity: 1;
+  background-color: $medium-gray;
+  color: #fff;
+  display: block;
+  padding: .5em 1em;
+  max-width: 500px;
+  clear: left;
+  content: "Du bliver hermed både medlem af Enhedslisten og Socialistisk Ungdomsfront - SUF, og at 100 kroner af dit årlige kontingent går til SUF";
+}
+
+#line-item-fields-field-betaling-fodselsdag-add-more-wrapper {
+  
+  .form-wrapper {
+    background-color: #fff;
+    border: none;
+    padding: 0;
+    
+  }
+  legend {
+    margin-bottom: .4em;
+    font-size: 1.1em;
+  }
+  .date-padding {
+    @include align-items(center);
+    @include display(flex);
+    @include flex-direction(row);
+    @include justify-content(space-between);
+    margin: 0 -.5em;
+  }
+  .form-item {
+    margin-bottom: 0;
+  }
+  .date-padding > .form-item {
+    @include flex(1);
+    margin-bottom: 0;
+    padding:0 .5em;
+  }
+}

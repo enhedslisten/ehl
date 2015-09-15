@@ -1,0 +1,29 @@
+.views-exposed-widgets {
+  @include align-items(top);
+  @include display(flex);
+  @include flex-direction(row);
+  @include justify-content(space-between);
+  margin:0 -.5em;
+
+  .form-submit {
+    width: 100%;
+  }
+
+  .views-exposed-widget {
+    padding:0 .5em;
+  }
+
+}
+.views-exposed-widgets > .views-exposed-widget {
+  @include flex(3);
+}
+
+.views-exposed-widgets > .views-exposed-widget:last-child {
+  @include flex(1);
+}
+
+.view-sp-rgsm-l-og-svar {
+  .form-submit {
+    margin-top: 37.744px;
+  }
+}

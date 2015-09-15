@@ -1,0 +1,42 @@
+.section-groenne-mandater-groenne-resultater {
+
+    .wrapper-first-content {
+        background-image: url('/sites/all/themes/ehl/images/bg-mrg-jsn.jpg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: bottom left;
+        min-height: 740px;
+        padding-bottom: 320px;
+        @include media($desk){
+            background-size: auto;
+            padding-bottom: 0;
+            min-height: 380px;
+        }
+        .ehl-page-container {
+            @include media($desk){
+                padding-top: 70px;
+                padding-left: 450px;
+            }
+        }
+    }
+    .content-svung-image h2 {
+        display: none;
+        font-family: "Soho W02 Bold","Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    }
+    h2 {
+        font-size: 2.2rem;
+    }
+    .flip-container {
+        margin-bottom: 18px;
+        @include media($desk){
+            margin-bottom: 0;
+        }
+    }
+    .btn-green {
+        font-size: 70%;
+        @include media($tab){
+            font-family: 100%;
+        }
+    }
+}
+

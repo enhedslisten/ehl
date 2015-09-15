@@ -1,0 +1,88 @@
+$tab: 44em;
+$desk: 70em;
+$between: 10em 20em;
+
+@include media($tab) {
+  .ehl-container-sidebar-right {
+    @include outer-container;
+    .ehl-content {
+      @include span-columns(8);
+    }
+
+    .ehl-sidebar {
+      @include span-columns(4);
+    }
+  }
+
+  .ehl-container-sidebar-left {
+    @include outer-container;
+    @include direction-context(right-to-left) {
+      .ehl-content {
+        @include span-columns(8);
+      }
+
+      .ehl-sidebar {
+        @include span-columns(4);
+      }
+    }
+  }
+
+  .ehl-container-split {
+    @include outer-container;
+    .ehl-split-left {
+      @include span-columns(6);
+    }
+
+    .ehl-split-right {
+      @include span-columns(6);
+    }
+  }
+  .view-temaer {
+    @include outer-container;
+    .views-row-1 {
+      @include span-columns(4);
+    }
+    .views-row-2 {
+      @include span-columns(4);
+    }
+    .views-row-3 {
+      @include span-columns(4);
+    }
+  }
+
+}
+
+.ehl-page-container {
+  @include clearfix;
+}
+
+.span1,.span2,.span3,.span4,.span5,.span6,.span7,.span8,.span9,.span10,.span11,.span12{
+  display: block;
+}
+
+$unit: 6.2056333%; // Width of each grid column unit
+$margin: 2.1277%; // Margin between the grid columns
+
+@include media($tab) {
+
+  .group {
+    margin-left: -$margin;
+  }
+
+  .span1,.span2,.span3,.span4,.span5,.span6,.span7,.span8,.span9,.span10,.span11,.span12{
+    float: left;
+    margin-left: $margin;
+    margin-bottom: 0;
+    @include box-sizing(border-box);
+  }
+
+  @for $i from 1 through 12 {
+    .span#{$i} {
+      width: ($unit * $i) + ($margin * ($i - 1));
+    }
+  }
+}
+
+.span-space-below {
+  margin-bottom: 1rem;
+}

@@ -1,0 +1,20 @@
+.tabs--primary {
+    position: absolute;
+    top: 6em;
+    z-index: 100;
+    margin-bottom: 0;
+    border-bottom: none;
+    opacity: .8;
+    
+    li {
+        display: block;
+        margin-bottom: .5em;
+        float: none;
+        text-align: center;
+    }
+    
+    a {
+        color: inherit;
+    }
+    
+}

@@ -1,0 +1,42 @@
+.list-nyheder, .list-kalender {
+    list-style:none;
+	padding-left:0;
+	margin:0;
+    display: block;
+    
+    .sticky h5 {
+        font-family:"Soho W02 Bold";
+        font-weight: normal;
+    }
+}
+
+.list-nyheder li, .list-kalender li {
+    margin-bottom: 1em;
+    display: block;}
+
+.list-nyheder a, .list-kalender a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.list-kalender li:before {
+font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  width: 25px;
+  margin-top: -2px;
+  color: #ccc;
+  display: block;
+  float: left;
+  font-variant: normal;
+  text-transform: none;
+  margin-left: -25px;
+content: '\e80e';
+}
+
+.list-news-img{
+    float: left;
+    margin-right: 1em;
+    width: 20%;
+}

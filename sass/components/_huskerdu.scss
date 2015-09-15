@@ -1,0 +1,291 @@
+.wrapper-huskerdu {
+    padding-top: 4em;
+    @include media($tab){
+        padding-top: 4em;
+    }
+}
+
+/* entire container, keeps perspective */
+
+.flop-container {
+    -webkit-perspective: 1000;
+    perspective: 1000;
+    margin: 0 0 10px 0;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+/*  UPDATED! flop the pane when hovered */
+
+.flop-container:hover .flop-back {
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+}
+
+.flop-container:hover .flop-front {
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.flop-container,
+.flop-container .flop-front,
+.flop-container .flop-back {
+    width: 100%;
+    height: 200px;
+}
+
+.flop-container .flop-front h2 {
+    margin: auto;
+    font-size: 1em;
+}
+
+.flop-icon {
+    width: 60%;
+    opacity: 0.6;
+    margin: 2em auto 1em auto;
+}
+/* flop speed goes here */
+
+.flopper {
+    -webkit-transition: 0.6s;
+    transition: 0.6s;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    position: relative;
+}
+/* hide back of pane during swap */
+
+.flop-container .flop-front,
+.flop-container .flop-back {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: 0.6s;
+    transition: 0.6s;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+/*  UPDATED! front pane, placed above back */
+
+.flop-container .flop-front {
+    z-index: 2;
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    color: #fff;
+    text-align: center;
+}
+/* back, initially hidden pane */
+
+.flop-container .flop-back {
+    -webkit-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+    background-color: #ddd;
+    padding: .3em;
+    box-sizing: border-box;
+}
+.logo-parti {
+    width: 32px;
+    height: 32px;
+    overflow: hidden;
+    background-image: url('https://enhedslisten.dk/files/huskerdu/sprite-partilogo.png');
+    margin-right: 0px;
+    text-indent: -9999px;
+}
+
+.logo-parti-df {}
+
+.logo-parti-b {
+    background-position: 0 -30px;
+}
+
+.logo-parti-sf {
+    background-position: 0 -62px;
+}
+
+.logo-parti-a {
+    background-position: 0 -94px;
+}
+
+.logo-parti-la {
+    background-position: 0 -125px;
+}
+
+.logo-parti-v {
+    background-position: 0 -157px;
+}
+
+.logo-parti-c {
+    background-position: 0 -187px;
+}
+
+.logo-parti-oe {
+    background-position: 0 -216px;
+}
+
+.bg-dong {
+    background-image: url('https://enhedslisten.dk/files/huskerdu/bg-dong-alt.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+.bg-laererne {
+    background-image: url('https://enhedslisten.dk/files/huskerdu/bg-laererne-alt.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+.bg-offloven {
+    background-image: url('https://enhedslisten.dk/files/huskerdu/bg-offentlighedsloven-alt.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+.bg-selskabsskat {
+    background-image: url('https://enhedslisten.dk/files/huskerdu/bg-selskabsskat.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+.bg-topskat {
+    background-image: url('https://enhedslisten.dk/files/huskerdu/bg-skattelettelser-alt.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+.bg-fremdrift {
+    background-image: url('https://enhedslisten.dk/files/huskerdu/bg-fremdriftsreformen-alt.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+.bg-dagpenge {
+    background-image: url('https://enhedslisten.dk/files/huskerdu/bg-dagpenge-alt.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+.bg-genoptjening {
+    background-image: url('https://enhedslisten.dk/files/huskerdu/bg-genoptjening-alt.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+.bg-pensionshykleri {
+    background-image: url('https://enhedslisten.dk/files/huskerdu/bg-pensionshykleri-alt.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+.bg-arbejdsklausuler {
+    background-image: url('https://enhedslisten.dk/files/huskerdu/bg-arbejdsklausuler-alt.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+.bg-kontanthjaelpsreform {
+    background-image: url('https://enhedslisten.dk/files/huskerdu/bg-kontanthjaelp-alt.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+.bg-flexreform {
+    background-image: url('https://enhedslisten.dk/files/huskerdu/bg-jobsoegning-alt.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+.flop-container .flop-front {
+    display: table;
+    width: 100%;
+}
+
+.flop-container .flop-front h2 {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    padding: 0 .5em 0 .5em;
+}
+
+.flop-container .nolist li {
+    display: inline-block;
+}
+
+.flop-container .nolist {
+    text-align: center;
+    margin: 0;
+}
+
+.wrapper-flop {
+    margin-right: -10px;
+    padding: 1em 0;
+}
+
+.wrapper-huskerdu {
+    background: #f7f3ea;
+    background-image: url('https://enhedslisten.dk/files/huskerdu/bg-jsn.jpg');
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+.wrapper-huskerdu .btn-bar {
+    max-width: 60%;
+}
+
+@media (min-width: 700px) {
+    .flop-container {
+        width: 33.3333%;
+        float: left;
+        box-sizing: border-box;
+        margin: 0 0 10px 0;
+        padding: 0 10px 10px 0;
+    }
+    .wrapper-huskerdu {
+        background: #f7f3ea;
+        background-image: none;
+        background-size: auto;
+        background-repeat: no-repeat;
+        background-position: right 45px bottom;
+    }
+    .wrapper-huskerdu .ehl-page-container {
+        background: #f7f3ea;
+        padding-top: 4em;
+        background-image:     url('https://enhedslisten.dk/files/huskerdu/bg-jsn.jpg');
+        background-repeat: no-repeat;
+        background-position: right 12px bottom;
+    }
+    .wrapper-huskerdu p {
+        max-width: 70%;
+    }
+    .wrapper-huskerdu .btn-bar {
+    max-width: 70%;
+}
+}
+
+@media (min-width: 1000px) {
+    .flop-container {
+        width: 25%;
+        float: left;
+        box-sizing: border-box;
+        margin: 0 0 10px 0;
+        padding: 0 10px 10px 0;
+    }
+}
+
+.flop-container .flop-back h3 {
+    margin-bottom: .5em;
+}
+
+.half {
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+}
+
+.half:first-child {
+    padding-right: 5px;
+}
+
+.half:last-child {
+    padding-left: 5px;
+}

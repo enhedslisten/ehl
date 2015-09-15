@@ -1,0 +1,28 @@
+.list-maerkesager {
+    list-style: none; 
+    margin: 0 0 2em 0;
+    padding: 0; 
+    display: block;
+    
+    li {
+        list-style: none;
+        display: block;
+        @include media($tab) {
+            width: 20%;
+            float: left;
+        }
+        padding-right: 1em;
+        box-sizing: border-box;
+        perspective: 1000px;
+    }
+    a {
+        display: block;
+        transition: all 0.3s ease;
+        p {
+            font-size: 80%;
+        }
+        &:hover {
+            transform: scale3d(1.2,1.2,1.2);
+        }
+    }
+}

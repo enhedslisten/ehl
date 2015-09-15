@@ -1,0 +1,19 @@
+.wrapper-link-btn {
+  text-align: center;
+  margin: 0 -.5em -.5em 0;
+  font-size: 80%;
+}
+
+.link-btn {
+  display: inline-block;
+  text-align: left;
+  text-decoration: none;
+    color: inherit;
+  margin: 0 .5em .5em 0;
+  padding: .2em .4em; 
+  background: rgba(0,0,0,.1);
+}
+
+.link-btn:hover {
+  background: rgba(0,0,0,0);
+}

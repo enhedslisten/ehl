@@ -1,0 +1,36 @@
+
+
+.view-mf {
+
+    .views-row {
+        float: left;
+        width: 33.3333%;
+        text-align: center;
+        font-size: 80%;
+        @include media($tab) {
+            width: 14.2857%;
+        }
+    }
+    h5 {
+        height: 40px;
+    }
+    @include media($tab){
+        .views-row-8, .views-row-15 {
+            clear: left;
+        }
+    }
+
+    img {
+        -webkit-filter: grayscale(100%); 
+        filter: grayscale(100%);
+        transition: all 0.3s ease;
+        margin-bottom: .5em;
+        padding-right: 1em;
+        &:hover {
+            filter: grayscale(0%);
+            -webkit-filter: grayscale(0%); 
+            opacity: 1;
+        }
+    }
+
+}

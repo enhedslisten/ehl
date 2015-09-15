@@ -1,0 +1,47 @@
+.ehl-sidebar .menu-block-wrapper ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background: #ddd;
+    
+    li {
+        list-style: none;
+    }
+
+    a,
+    .nolink{
+        display: block;
+        color: #222;
+        padding: 10px 20px;
+        border-bottom: 1px solid rgba(0, 0, 0, .1);
+        border-top: 1px solid rgba(255, 255, 255, .1);
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    li.active,
+    li.active .nolink,
+    a.active,
+    a:hover,
+    .nolink:hover{
+        background: $primary-color;
+        color: #FFF;
+        background-repeat: no-repeat;
+        background-position: right 20px center;
+    }
+
+    li ul {
+        font-size: 80%;
+        background-color: #eee;
+        padding: 10px 40x 10px 20px;
+        color: green;
+         ul a {
+             padding: 10px 40x 10px 40px;
+        color: green;
+         }
+        
+    }
+    
+    
+
+}

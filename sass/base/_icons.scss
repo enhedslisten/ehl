@@ -1,0 +1,435 @@
+.icon {
+	display: inline-block;
+	width: 1.1em;
+	height: 1.1em;
+    margin-top: .25em;
+	fill: #000000;
+    float: left;
+}
+
+.toolbar-menu .icon {
+	width: auto;
+	height: auto;
+}
+
+
+.icon-quiet {
+    fill: $subtle-color;
+}
+
+.icon-spaceabove {
+    margin-top: .3em;
+}
+
+.icon-btn {
+    margin-top: 0;
+}
+
+.icon-inline {
+    float: none;
+    display: inline;
+    margin: 0 0 0 .5em;
+}
+
+.icon-text {
+    display: none;
+    position:relative;
+    top:.1em;
+    @include media($tab) {
+        display: inline-block;}
+}
+
+.icon-search {
+	fill: #000000;
+	width: 30px;
+}
+.icon-envelope-o {
+	fill: #000000;
+}
+.icon-heart {
+	fill: #000000;
+}
+.icon-star {
+	fill: #000000;
+	width: 30px;
+}
+.icon-user {
+	fill: #000000;
+	width: 25px;
+}
+.icon-check {
+	fill: #000000;
+}
+.icon-times {
+	fill: #000000;
+}
+.icon-gear {
+	fill: #000000;
+	width: 34px;
+}
+.icon-home {
+	fill: #000000;
+	width: 30px;
+}
+.icon-clock-o {
+	fill: #000000;
+}
+.icon-tag {
+	fill: #000000;
+}
+.icon-bookmark {
+	fill: #000000;
+	width: 34px;
+}
+.icon-print {
+	fill: #000000;
+	width: 30px;
+}
+.icon-pencil {
+	fill: #000000;
+}
+.icon-map-marker {
+	fill: #000000;
+	width: 18px;
+}
+.icon-warning {
+	fill: #000000;
+}
+.icon-calendar {
+	fill: #000000;
+}
+.icon-comment {
+	fill: #000000;
+}
+.icon-phone {
+	fill: #000000;
+}
+.icon-twitter {
+	fill: #000000;
+}
+.icon-facebook {
+	fill: #000000;
+}
+.icon-rss {
+	fill: #000000;
+}
+.icon-bullhorn {
+	fill: #000000;
+}
+.icon-group {
+	fill: #000000;
+}
+.icon-paperclip {
+	fill: #000000;
+}
+.icon-bars {
+	fill: #000000;
+}
+.icon-lightbulb-o {
+	fill: #000000;
+}
+.icon-cloud-download {
+	fill: #000000;
+}
+.icon-file-text-o {
+	fill: #000000;
+}
+.icon-angle-left {
+	fill: #000000;
+}
+.icon-angle-right {
+	fill: #000000;
+}
+.icon-angle-up {
+	fill: #000000;
+}
+.icon-angle-down {
+	fill: #000000;
+}
+.icon-youtube-play {
+	fill: #000000;
+}
+.icon-instagram {
+	fill: #000000;
+}
+.icon-wheelchair {
+	fill: #000000;
+}
+
+.icon-pushy {
+    margin-top: .2em;
+    fill: #b3b3b1;
+    float: right;
+}
+
+//icons
+
+@font-face {
+  font-family: 'fontello';
+  src: url('Fonts/fontello/fontello.eot?40427036');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'fontello';
+  src: url('Fonts/fontello/fontello.eot?40427036');
+  src: url('Fonts/fontello/fontello.eot?40427036#iefix') format('embedded-opentype'),
+       url('Fonts/fontello/fontello.woff?40427036') format('woff'),
+       url('Fonts/fontello/fontello.ttf?40427036') format('truetype'),
+       url('Fonts/fontello/fontello.svg?40427036#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+[class^="icon-"], [class*=" icon-"] {
+text-decoration: none;}
+
+.inline-icon  div {
+    display: inline-block
+}
+
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+     
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+ 
+.icon-oe_rgb:before { content: '\e81a'; } /* '' */
+.icon-adult:before { content: '\e82e'; } /* '' */
+.icon-oe-shape_rgb:before { content: '\e819'; } /* '' */
+.icon-bullet_citat:before { content: '\e81f'; } /* '' */
+.icon-bullet:before { content: '\e820'; } /* '' */
+.icon-search:before { content: '\e822'; } /* '' */
+.icon-mail:before { content: '\e800'; } /* '' */
+.icon-mail-alt:before { content: '\e801'; } /* '' */
+.icon-heart:before { content: '\e802'; } /* '' */
+.icon-star:before { content: '\e821'; } /* '' */
+.icon-user:before { content: '\e807'; } /* '' */
+.icon-users:before { content: '\e808'; } /* '' */
+.icon-attach:before { content: '\e82a'; } /* '' */
+.icon-pin:before { content: '\e829'; } /* '' */
+.icon-tag:before { content: '\e809'; } /* '' */
+.icon-bookmark:before { content: '\e80a'; } /* '' */
+.icon-flag:before { content: '\e828'; } /* '' */
+.icon-thumbs-up:before { content: '\e80b'; } /* '' */
+.icon-thumbs-down:before { content: '\e80c'; } /* '' */
+.icon-download:before { content: '\e805'; } /* '' */
+.icon-reply:before { content: '\e823'; } /* '' */
+.icon-forward:before { content: '\e824'; } /* '' */
+.icon-pencil:before { content: '\e82c'; } /* '' */
+.icon-enhedslisten_rgb:before { content: '\e817'; } /* '' */
+.icon-comment:before { content: '\e806'; } /* '' */
+.icon-chat-empty:before { content: '\e82b'; } /* '' */
+.icon-attention:before { content: '\e816'; } /* '' */
+.icon-location:before { content: '\e81b'; } /* '' */
+.icon-doc-text:before { content: '\e827'; } /* '' */
+.icon-rss:before { content: '\e81c'; } /* '' */
+.icon-phone:before { content: '\e826'; } /* '' */
+.icon-calendar:before { content: '\e80e'; } /* '' */
+.icon-clock:before { content: '\e815'; } /* '' */
+.icon-lightbulb:before { content: '\e80d'; } /* '' */
+.icon-angle-left:before { content: '\e804'; } /* '' */
+.icon-angle-right:before { content: '\e803'; } /* '' */
+.icon-mobile:before { content: '\e82d'; } /* '' */
+.icon-megaphone:before { content: '\e81e'; } /* '' */
+.icon-money:before { content: '\e825'; } /* '' */
+.icon-facebook:before { content: '\e80f'; } /* '' */
+.icon-github:before { content: '\e814'; } /* '' */
+.icon-gplus:before { content: '\e811'; } /* '' */
+.icon-instagramm:before { content: '\e813'; } /* '' */
+.icon-twitter:before { content: '\e810'; } /* '' */
+.icon-youtube-play:before { content: '\e812'; } /* '' */
+.icon-drupal:before { content: '\e818'; } /* '' */
+.icon-print:before { content: '\e81d'; } /* '' */
+
+@include media($desk) {
+   .btn-bar .btn {
+	float: left;
+	width: 48%;
+	min-width: 125px;
+	box-sizing: border-box;
+	font-size: 80%;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+
+.btn-bar .btn:first-child {
+	margin-right: 4%;;
+}
+}
+
+.btn-aligncenter {
+    margin: 0 auto;
+    max-width: 300px;
+}
+
+.btn {
+	display: block;
+	text-decoration: none;
+	white-space: nowrap;
+	height: 3em;
+    max-width: 400px;
+	line-height: 3.2em;
+	padding-left: 0.5em;
+	background: #aaa;
+	color: #fff;
+	margin-bottom: 1em;
+	text-align: center;
+	font-family: "Soho W02 Bold","Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;font-weight: normal;
+	cursor: pointer;
+}
+
+.btn-green {
+    background: $green;
+    display: block;
+
+    max-width: 600px;
+}
+
+.btn:before {
+	font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+     
+  /* fix buttons height, for twitter bootstrap */
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+	float: right;
+	height: 3em;
+	width: 3em;
+	background: #222;
+	content: '\e80d';
+	color: #fff;
+	opacity: 0.5;
+    margin-left: .5em;
+}
+
+.btn-medlem,.btn-red {
+	line-height: 3.2em;
+	background: #c4163f;
+	color: #fff;	
+}
+
+.btn-bidrag {
+	line-height: 3.2em;
+	background: $green;
+	color: #fff;	
+}
+
+.btn-aktiv {
+	line-height: 3.2em;
+	background: $purple;
+	color: #fff;	
+}
+
+
+.btn-facebook {
+	line-height: 3.2em;
+	background: #3B5998;
+	color: #fff;	
+}
+
+.btn-twitter {
+	line-height: 3.2em;
+	background: #1daced;
+	color: #fff;	
+}
+
+.btn-youtube {
+	line-height: 3.2em;
+	background: $youtube-color;
+	color: #fff;	
+}
+
+.btn-instagram {
+	line-height: 3.2em;
+	background: $instagram-color;
+	color: #fff;	
+}
+
+
+
+.btn-medlem:before {
+	content: '\e821';
+}
+
+.btn-bidrag:before {
+	content: '\e802';
+}
+
+.btn-aktiv:before {
+	content: '\e828';
+}
+
+.btn-facebook:before {
+	content: '\e80f';
+}
+
+.btn-twitter:before {
+	content: '\e810';
+}
+
+.btn-youtube:before {
+	content: '\e812';
+}
+
+.btn-instagram:before {
+	content: '\e813';
+}
+
+.btn:hover {
+	opacity: 0.5;
+    color: #fff;
+}
+.rise-btn {
+    position: relative;
+    a {
+        position: absolute;
+        z-index: 200;
+        width: 100%;
+    }
+}

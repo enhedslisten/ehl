@@ -1,0 +1,38 @@
+.wrapper-fv14kandidat {
+    background-color: #F5F1E8;
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    margin-bottom: 4rem;
+    h1 {
+        margin-top: 8rem;
+    }
+    
+    .ehl-page-container img {
+        float: right;
+        margin-right: 5vw;
+    }
+    .svg-container {
+        margin-top: -20vw;
+    }
+}
+
+
+.wrapper-top-jsn {
+    background-image: url('../images/topimg/topimg-jsn.jpg');
+    background-size: cover;
+    background-position: center center;
+    padding-top: 8rem;
+    color: #fff;
+    overflow: hidden;
+}
+
+.wrapper-top-sb {
+    background-image: url('../images/topimg/topimg-sb.jpg');
+    background-size: cover;
+    background-position: center center;
+    padding-top: 8rem;
+    color: #fff;
+    overflow: hidden;
+    margin-bottom: 4rem;
+}
